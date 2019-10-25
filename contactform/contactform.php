@@ -16,7 +16,7 @@
   $contactform->ajax = true;
 
   // Replace with your real receiving email address
-  $contactform->to = 'contact@example.com';
+  $contactform->to = 'amjidkov@mail.ru';
   $contactform->from_name = $_POST['name'];
   $contactform->from_email = $_POST['email'];
   $contactform->subject = $_POST['subject'];
@@ -25,5 +25,5 @@
   $contactform->add_message( $_POST['email'], 'Email');
   $contactform->add_message( $_POST['message'], 'Message', 10);
 
-  echo $contactform->send();
+  echo $contactform->send(Ваше сообщения отправлено. Спасибо вам, вы няшный :3);
 ?>
