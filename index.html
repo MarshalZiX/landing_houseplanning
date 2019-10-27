@@ -278,7 +278,7 @@
         <p class="centered">Скоро наше веб-приложение будет доступно<br/>в AppStore и GooglePlay.</p>
         <div class="col-md-6 col-md-offset-3 mt centered">
           <a href='https://yandex.ru'><button href ="yandex.ru" class="btn btn-lg btn-apple">Веб-приложение</button></a>
-          <button class="btn btn-lg btn-android">Скоро в GooglePlay</button>
+          <button class="btn btn-lg btn-android" onclick="alert('Сказано же СКОРО')">Скоро в GooglePlay</button>
         </div>
       </div>
       <!--/row -->
@@ -294,7 +294,7 @@
         <h1 class="centered">Подписаться на наши новости</h1>
         <hr class="aligncenter mb">
         <div class="col-md-6 col-md-offset-3">
-          <form role="form" action="register.php" method="post" enctype="plain">
+          <form role="form" >
             <input type="email" name="email" class="subscribe-input" placeholder="Введите ваш e-mail адрес..." required>
             <button class='btn btn-submit subscribe-submit' type="submit" onclick="alert('Спасибо, что подписались на наши новости, вы потрясающий ;)')">Подписаться</button>
           </form>
@@ -332,12 +332,13 @@
               <div class="validate"></div>
             </div>
 
-            <div class="loading">  Ваше сообщения отправлено. Спасибо вам, вы няшный :3</div>
+            <!-- <div class="loading"> </div> -->
             <!-- <div class="error-message"></div> -->
-            <div class="error-message"> Ваше сообщения отправлено. Спасибо вам, вы няшный :3</div>
+            <div class="error-message"> </div>
+            <div class="sent-message">Ваше сообщения отправлено. Спасибо вам, вы няшный :3</div>
 
             <div class="form-send">
-              <button type="submit" class="btn btn-large">Отправить сообщение</button>
+              <button type="submit" class="btn btn-large" onclick="alert('Ваше сообщения отправлено. Спасибо вам, вы няшный :3')">Отправить сообщение</button>
             </div>
 
           </form>
