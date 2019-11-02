@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+	    <link rel="shortcut icon" href="WebGL/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="WebGL/TemplateData/style.css">
+    <script src="WebGL/TemplateData/UnityProgress.js"></script>
+    <script src="WebGL/Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "WebGL/Build/WebGL.json", {onProgress: UnityProgress});
+    </script>
 </head>
 <body style="margin: 0;
 padding: 0;
@@ -29,7 +36,12 @@ background: rgb(229,231,231);">
     width:1200px;
     height: 600px;">
 
-    
+        <div class="webgl-content">
+      <div id="unityContainer" style="width: 1040px; height: 1040px"></div>
+      <div class="footer">
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+      </div>
+    </div>
     </div>
     <!-- content -->
 </body>
